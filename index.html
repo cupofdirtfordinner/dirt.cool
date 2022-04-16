@@ -9,20 +9,21 @@
 		 font-style: normal;
 		 }
 
-         img {
-		 display: block;
-		 margin-left: auto;
-		 margin-right: auto;
-		 height: 50%;
-		 width: 40%;
-         }
-
 		 body{
 		 font-family: dirtstandardregular;
 		 background-image: url('bg.gif');
 		 background-size: cover;
 		 cursor: url('clicko.png'), auto;
 		 }
+
+         #logo {
+		 filter: drop-shadow(0 0 2rem black);
+		 display: block;
+		 margin-left: auto;
+		 margin-right: auto;
+		 height: 50%;
+		 width: 40%;
+         }
 		 
 		 #webportfolio {
 		 font-size: 80px;
@@ -32,23 +33,63 @@
 		 }
 		 
 		 #br {
-			  font-size: 60px;
+			  font-size: 30px;
 		 }
 
 		 #standardtype {
 
-		 font-size: 30px;
+		 font-size: 40px;
 		 text-align: center;
 		 }
+
+		 #icon {
+		 width: 200px;
+		 height: 200px;
+
+		 padding-left: 50px;
+		 padding-right: 50px;
+		 }
+
+		 .table {
+		 display: table;
+		 margin: 0 auto;
+		 }
+
+		 ul#horizontal li{
+		 display: inline;
+		 }
+
+		 #p {
+
+		 margin: 0 auto;
+		 width: 90%;
+		 background: rgba(0, 0, 0, 0.3);
+		 padding: 50px;
+		 margin: 20 auto;
+		 border-radius: 45px;
+
+		 }
+
 		</style>
 		
 		<link rel="icon" type="image/x-icon" href="favicon clicko.png">
 		<title>dirt's web portfolio</title>
 	</head>
     <body>
-	<img src="logos/logo2.png" alt="hey look! it me!">
+	<img id="logo" src="logos/logo2.png" alt="hey look! it me!">
+	
 	<p id="webportfolio">Cupofdirtfordinner's <br>web portfolio</p>
-	<p id="br"> <br> </p>
+	
+	<ul class="table" id="horizontal">
+		<li><a href="https://dirtbabby.newgrounds.com"><img id="icon" src="art/icons/ng.png" alt="my newgrounds page"></a></li>
+		<li><a href="discord.html"><img id="icon" src="art/icons/discord.png" alt="my discord"></a></li>
+		<li><a href="https://dirtsartdump.tumblr.com"><img id="icon" src="art/icons/art-tumblr.png" alt="my art tumblr"></a></li>
+		<li><a href="https://cupofdirtfordinner.tumblr.com"><img id="icon" src="art/icons/etc-tumblr.png" alt="my main tumblr"></a></li>
+	</ul>
+
+	<div id="p">
 	<p id="standardtype">Hi, i'm dirt! I go by a few names, the main ones being cupofdirtfordinner on most things, dirtbabby on newgrounds, or dirt on more casual things like discord. Im a 3d artist, pixel artist, and sort of general 2d artist (as seen in both this font and in that sick logo) '</p>
+	</div>
+
 	</body>
 </html>
