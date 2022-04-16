@@ -1,36 +1,54 @@
-<html>
+﻿<html>
 	<head>
 		<style>
-        img {
+		 @font-face {
+		 font-family: 'dirtstandardregular';
+		 src: url('webfontkit/dirtstandard-regular_2-webfont.woff2') format('woff2'),
+         url('webvfontkit/dirtstandard-regular_2-webfont.woff') format('woff');
+		 font-weight: normal;
+		 font-style: normal;
+		 }
+
+         img {
 		 display: block;
 		 margin-left: auto;
 		 margin-right: auto;
 		 height: 50%;
 		 width: 40%;
-        }
+         }
 
-		div {
-  cursor: url(clicko.png), auto;
-}
+		 body{
+		 font-family: dirtstandardregular;
+		 background-image: url('bg.gif');
+		 background-size: cover;
+		 cursor: url('clicko.png'), auto;
+		 }
+		 
+		 #webportfolio {
+		 font-size: 80px;
+		 text-align: center;
+		 transform: rotate(3deg);
 
-body{
-    background-image: url('bg.gif');
-    background-size: cover;
-    
-    
-    
-    height: 100vh;
-    padding:0;
-    margin:0;
-}
+		 }
+		 
+		 #br {
+			  font-size: 60px;
+		 }
 
+		 #standardtype {
+
+		 font-size: 30px;
+		 text-align: center;
+		 }
 		</style>
-
+		
+		<link rel="icon" type="image/x-icon" href="favicon clicko.png">
+		<title>dirt's web portfolio</title>
 	</head>
     <body>
-	<div>
 	<img src="logos/logo2.png" alt="hey look! it me!">
-	
-	</div>
+	<p id="webportfolio">Cupofdirtfordinner's <br>web portfolio</p>
+	<p id="br"> <br> </p>
+	<p id="standardtype">Hi, i'm dirt! I go by a few names, the main ones being cupofdirtfordinner on most things, dirtbabby on newgrounds, or dirt on more casual things like discord. Im a 3d artist, pixel artist, and sort of general 2d artist (as seen in both this font and in that sick logo) '</p>
 	</body>
 </html>
