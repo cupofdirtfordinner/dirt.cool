@@ -12,63 +12,102 @@
 		 body{
 		 font-family: dirtstandardregular;
 		 background-image: url('bg.gif');
-		 background-size: cover;
+		 background-attachment: fixed;
 		 cursor: url('clicko.png'), auto;
+		 color: #181425;
 		 }
 
          #logo {
-		 filter: drop-shadow(0 0 2rem black);
+		 filter: drop-shadow(0 0 2rem #262b44);
 		 display: block;
-		 margin-left: auto;
-		 margin-right: auto;
-		 height: 50%;
-		 width: 40%;
+		 margin: auto;
+		 width: auto;
+		 max-width: 50%;
+		 height: auto;
+		 max-height: 40%;
          }
 		 
 		 #webportfolio {
-		 font-size: 80px;
+		 font-size: 4vw;
 		 text-align: center;
 		 transform: rotate(3deg);
+		 padding: 3vw;
+		 margin: auto;
 
-		 }
-		 
-		 #br {
-			  font-size: 30px;
 		 }
 
 		 #standardtype {
-
+		 margin: auto;
+		 width: 90%;
+		 background: rgba(0, 0, 0, 0.2);
+		 padding: 2%;
+		 margin: 20 auto;
+		 border-radius: 4vmin;
 		 font-size: 40px;
 		 text-align: center;
 		 }
 
 		 #icon {
-		 width: 200px;
-		 height: 200px;
-
-		 padding-left: 50px;
-		 padding-right: 50px;
+		 width: 10vw;
+		 background: rgba(0, 0, 0, 0.2);
+		 border-radius: 4vmin;
+		 padding: 2vw;
 		 }
 
 		 .table {
 		 display: table;
-		 margin: 0 auto;
+		 margin: auto;
+		 width: 70vw;
 		 }
 
 		 ul#horizontal li{
 		 display: inline;
+		 padding: 1vw;
 		 }
 
-		 #p {
+		 #exhibit {
+		 margin: auto;
+		 padding: 1vw;
+		 border-radius: 4vmin;
+		 background: rgba(0, 0, 0, 0.2);
+		 width: 90vw;
+		 height: 72.9vh;
+		 margin-top: 4vh;
+		 margin-bottom: 4vh;
+		 }
 
-		 margin: 0 auto;
+		 #img4by3 {
+		 max-width: 97.2vw;
+		 max-height: 72.9vh;
+		 width: auto;
+		 height: auto;
+		 border-radius: 4vmin;
+		 }
+		 
+		 #img16by9 {
+		 max-width: 129.6vw;
+		 max-height: 72.9vh;
+		 width: auto;
+		 height: auto;
+		 border-radius: 4vmin;
+		 }
+
+		 #img1by1 {
+		 max-width: 72.9vw;
+		 max-height: 72.9vh;
+		 width: auto;
+		 height: auto;
+		 border-radius: 4vmin;
+		 }
+
+		 #exhibittext {
 		 width: 90%;
-		 background: rgba(0, 0, 0, 0.3);
-		 padding: 50px;
-		 margin: 20 auto;
-		 border-radius: 45px;
-
+		 padding: 2%;
+		 font-size: 30px;
 		 }
+
+		 .left {float: left;}
+		 .right {float: right}
 
 		</style>
 		
@@ -85,11 +124,75 @@
 		<li><a href="discord.html"><img id="icon" src="art/icons/discord.png" alt="my discord"></a></li>
 		<li><a href="https://dirtsartdump.tumblr.com"><img id="icon" src="art/icons/art-tumblr.png" alt="my art tumblr"></a></li>
 		<li><a href="https://cupofdirtfordinner.tumblr.com"><img id="icon" src="art/icons/etc-tumblr.png" alt="my main tumblr"></a></li>
+		<li><a href="https://www.github.com/cupofdirtfordiner"><img id="icon" src="art/icons/github.png" alt="my github"></a></li>
 	</ul>
 
-	<div id="p">
-	<p id="standardtype">Hi, i'm dirt! I go by a few names, the main ones being cupofdirtfordinner on most things, dirtbabby on newgrounds, or dirt on more casual things like discord. Im a 3d artist, pixel artist, and sort of general 2d artist (as seen in both this font and in that sick logo) '</p>
-	</div>
+		<p id="standardtype">Hi, i'm dirt! Below you will find some of my art accompanied with some fancy descriptions and fun facts about them. Above, you will find links to my active socials. This being my: <br><br> newgrounds (for high res art)<br>my discord (best place to reach me)<br> my art tumblr (for extra art stuff)<br> my main tumblr (for my shitposts and other me stuff)<br> and my github (my code and personal graveyard).</p>
 
-	</body>
+ 		<!--<div id="standardtype">
+			<ul>
+				<li id="ng">newgrounds (for high res art)<li>
+				<li id="discord">my discord (best place to reach me)</li>
+				<li id="tumblr">my art tumblr (for extra art stuff)<br>my main tumblr (for my shitposts and other me stuff)</li>
+				<li id="github">and my github (my code and personal graveyard).</li>
+			</ul>
+		</div>
+	</div>-->
+
+	<div id="3Dart">
+		<div id="exhibit">
+			 <img id="img1by1" class="left" src="art/3d/tub!.png">
+			 <p id="exhibittext">i made this lil thing in about an hour for a friends discord server icon (which went up unused lmao). however im really proud of the result, so its here! this was also the first time I ever used geometry nodes, which I am proud of.</p>
+		</div>
+
+		 <div id="exhibit">
+			 <img id="img4by3" class="right" src="art/3d/plaza.png">
+			 <p id="exhibittext">this thing took me 3 months to finish! this thing marks a ton of milestones for me, more than i can put in this lil blurb, so if you want to know some fun facts or whatever about this then read about it <a href="https://dirtsartdump.tumblr.com/post/677359646249467904/iconui-facts">here</a></p>
+		</div>
+
+		<div id="exhibit">
+			 <img id="img4by3" class="left" src="art/3d/puter.png">
+			 <p id="exhibittext">not many milestones linked to this one, but it still looks neat i think. better view of the computer and phone screen in my <a href"https://dirtsartdump.tumblr.com/post/670221961003253760/heres-a-fun-factoid-i-made-the-background-via">tumblr post</a> </p>
+		</div>
+
+		<div id="exhibit">
+			 <img id="img16by9" class="right" src="art/3d/fps.png">
+			 <p id="exhibittext">the first *real* art i ever made in blender! circa ~novemnber 2021 - i had very little blender experience prior to this, from when i had made <a href="https://www.youtube.com/watch?v=ylueMWfMGLM">these</a> <a href="https://www.youtube.com/watch?v=dIz6dKG65LM">two</a> videos, but this was a year prior and also really not a ton of anything to figure out or memorize.</p>
+		</div>
+
+	 </div>
+	 <div id="PixelArt">
+
+		 <div id="exhibit">
+			 <img id="img1by1" class="left" src="deadestate.png">
+			 <p id="exhibittext">my submission for the dead estate art competetion held on newgrounds in around october of 2021 (i didnt win though lmao)</p>
+		 </div>
+
+		 <div id="exhibit">
+			 <img id="img1by1" class="left" src="me.gif">
+			 <p id="exhibittext">i made this to be my pfp for discord when i had a free month of nitro a few years ago</p>
+	 	 </div>
+
+	 	 <div id="exhibit">
+			<img id="img1by1" class="left" src="robo man.gif">
+			 <p id="exhibittext">enemy i made for a tower defense called gardefense</p>
+		 </div>
+
+		 <div id="exhibit">
+			<img id="img1by1" class="left" src="sloom large.gif">
+			<p id="exhibittext">also made for a tower defense game called gardefense</p>
+		 </div>
+
+		 <div id="exhibit">
+			<img id="img1by1" class="left" src="blue sloom large.gif">
+			<p id="exhibittext">this, like the other two previous works, was too made for a twoer defense game called gardefense.</p>
+		 </div>
+
+		 <div id="exhibit">
+			<img id="img1by1" class="left" src="skeletongiflarge.gif">
+			<p id="exhibittext">dude your never gonna belive this</p>
+		 </div>
+
+	 </div>
+	 </body>
 </html>
