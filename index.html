@@ -37,11 +37,12 @@
 		 }
 
 		 #standardtype {
-		 margin: auto;
+		 margin-top: 5vh;
+		 margin-right: auto;
+		 margin-left: auto;
 		 width: 90%;
 		 background: rgba(0, 0, 0, 0.2);
 		 padding: 2%;
-		 margin: 20 auto;
 		 border-radius: 4vmin;
 		 font-size: 40px;
 		 text-align: center;
@@ -63,6 +64,14 @@
 		 ul#horizontal li{
 		 display: inline;
 		 padding: 1vw;
+		 }
+
+		 #pixel3dtoggle {
+		 display: inline;
+		 padding: 1vw;
+		 display: flex;
+		 justify-content: center;
+		 align-items: center;
 		 }
 
 		 #exhibit {
@@ -103,18 +112,64 @@
 		 #exhibittext {
 		 width: 90%;
 		 padding: 2%;
-		 font-size: 30px;
+		 font-size: 40px;
+		 margin-left: 5vw;
+		 margin-right: 5vw;
+		 text-align: center;
 		 }
 
 		 .left {float: left;}
 		 .right {float: right}
 
+		 #togglebutton {
+
+		 display: inline-block;
+
+		 margin: 1%;
+		 width: 45%;
+		 background: rgba(0, 0, 0, 0.2);
+		 padding: 1%;
+		 border-radius: 4vmin;
+		 font-size: 50px;
+		 text-align: center;
+		 box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+		 transition: all 0.3s ease-in-out;
+		 }
+
+		 #togglebutton:hover {
+
+		 margin: 1%;
+		 width: 45%;
+		 background: rgba(0, 0, 0, 0.2);
+		 padding: 1%;
+		 border-radius: 4vmin;
+		 font-size: 50px;
+		 text-align: center;
+		 box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+		 transition: opacity 0.3s ease-in-out;
+		 transform: scale(1.05, 1.05);
+
+		 }
+
 		</style>
-		
+	 <script type="text/javascript">
+		 top.visible_div_id = 'right';
+		 function toggle_visibility(id) {
+		   var old_e = document.getElementById(top.visible_div_id);
+		   var new_e = document.getElementById(id);
+		   if(old_e) {
+			  console.log('old', old_e, 'none');
+			  old_e.style.display = 'none';
+		   }
+    console.log('new', new_e, 'block');
+     new_e.style.display = 'block';   
+     top.visible_div_id = id;          
+  }
+  </script>
 		<link rel="icon" type="image/x-icon" href="favicon clicko.png">
 		<title>dirt's web portfolio</title>
 	</head>
-    <body>
+    <body onload="toggle_visibility('left');">
 	<img id="logo" src="logos/logo2.png" alt="hey look! it me!">
 	
 	<p id="webportfolio">Cupofdirtfordinner's <br>web portfolio</p>
@@ -138,8 +193,12 @@
 			</ul>
 		</div>
 	</div>-->
-
-	<div id="3Dart">
+	<div id="pixel3dtoggle">
+		<div id="togglebutton"onclick="toggle_visibility('left');">my 3D art</div>
+		<div id="togglebutton"onclick="toggle_visibility('right');">my pixel art</div>
+	</div>
+	
+	<div id="left">
 		<div id="exhibit">
 			 <img id="img1by1" class="left" src="art/3d/tub!.png">
 			 <p id="exhibittext">i made this lil thing in about an hour for a friends discord server icon (which went up unused lmao). however im really proud of the result, so its here! this was also the first time I ever used geometry nodes, which I am proud of.</p>
@@ -157,11 +216,11 @@
 
 		<div id="exhibit">
 			 <img id="img16by9" class="right" src="art/3d/fps.png">
-			 <p id="exhibittext">the first *real* art i ever made in blender! circa ~novemnber 2021 - i had very little blender experience prior to this, from when i had made <a href="https://www.youtube.com/watch?v=ylueMWfMGLM">these</a> <a href="https://www.youtube.com/watch?v=dIz6dKG65LM">two</a> videos, but this was a year prior and also really not a ton of anything to figure out or memorize.</p>
+			 <p id="exhibittext">the first *real* art i ever made in blender! circa ~novemnber 2021 - i had very little blender experience prior to this, from when i had made <a href="https://www.youtube.com/watch?v=ylueMWfMGLM">these</a> <a href="https://www.youtube.com/watch?v=dIz6dKG65LM">two</a> videos, but this was a year prior so nothing really carried over.</p>
 		</div>
 
 	 </div>
-	 <div id="PixelArt">
+	 <div id="right">
 
 		 <div id="exhibit">
 			 <img id="img1by1" class="left" src="art/2d-pixel/deadestate.png">
