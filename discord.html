@@ -1,0 +1,94 @@
+<html>
+	<head>
+		<style>
+		 @font-face {
+		 font-family: 'dirtstandardregular';
+		 src: url('webfontkit/dirtstandard-regular_2-webfont.woff2') format('woff2'),
+         url('webvfontkit/dirtstandard-regular_2-webfont.woff') format('woff');
+		 font-weight: normal;
+		 font-style: normal;
+		 }
+
+		 body{
+		 font-family: dirtstandardregular;
+		 background-image: url('bg.gif');
+		 background-attachment: fixed;
+		 cursor: url('clicko.png'), auto;
+		 color: #181425;
+		 animation: scale-up-ver-top 1s;
+		 text-align: center;
+		 }
+
+         #logo {
+		 filter: drop-shadow(0 0 2rem #262b44);
+		 display: block;
+		 margin: auto;
+		 width: auto;
+		 max-width: 50%;
+		 height: auto;
+		 max-height: 40%;
+		 animation: scale-up-ver-center;
+         }
+		 
+		 #webportfolio {
+		 font-size: 4vw;
+		 text-align: center;
+		 transform: rotate(3deg);
+		 padding: 3vw;
+		 margin: auto;
+
+		 }
+
+		 #standardtype {
+		 margin-top: 5vh;
+		 margin-right: auto;
+		 margin-left: auto;
+		 width: 90%;
+		 background: rgba(0, 0, 0, 0.2);
+		 padding: 2%;
+		 border-radius: 4vmin;
+		 font-size: 40px;
+		 text-align: center;
+		 }
+
+		 #centertype {
+		 display: block;
+		 margin-top: 12vmax;
+		 font-size: 10vw;
+		 }
+
+		 @-webkit-keyframes scale-up-ver-center {
+		 0% {
+		   -webkit-transform: scaleY(0.4);
+		           transform: scaleY(0.4);
+		  }
+		 100% {
+	  		 -webkit-transform: scaleY(1);
+		             transform: scaleY(1);
+			}
+		 }
+
+			@-webkit-keyframes scale-up-ver-top {
+			0% {
+			    -webkit-transform: scaleY(0.4);
+			            transform: scaleY(0.4);
+			    -webkit-transform-origin: 100% 0%;
+			            transform-origin: 100% 0%;
+			}
+			100% {
+			    -webkit-transform: scaleY(1);
+			            transform: scaleY(1);
+		    -webkit-transform-origin: 100% 0%;
+				    transform-origin: 100% 0%;
+			  }
+			}
+
+		</style>
+
+		</head>
+		<body>
+		<p id="centertype">discord:</p>
+		<p id="centertype">dirt#0953</p>
+
+		</body>
+	</html>
