@@ -1,0 +1,218 @@
+<html>
+	<head>
+		<style>
+		 @font-face {
+		 font-family: 'dirtstandardregular';
+		 src: url('webfontkit/dirtstandard-regular_2-webfont.woff2') format('woff2'),
+         url('webvfontkit/dirtstandard-regular_2-webfont.woff') format('woff');
+		 font-weight: normal;
+		 font-style: normal;
+		 }
+
+		 body{
+		 font-family: dirtstandardregular;
+		 background-image: url('bg.gif');
+		 background-attachment: fixed;
+		 cursor: url('clicko.png'), auto;
+		 color: #181425;
+		 animation: scale-up-ver-top 1s;
+	 	 }
+
+         #logo {
+		 filter: drop-shadow(0 0 2rem #262b44);
+		 display: block;
+		 margin: auto;
+		 width: auto;
+		 max-width: 50%;
+		 height: auto;
+		 max-height: 40%;
+		 animation: scale-up-ver-center;
+         }
+		 
+		 div {
+		 cursor:url(clicko.cur),auto;
+		 }
+
+		 #webportfolio {
+		 font-size: 4vw;
+		 text-align: center;
+		 transform: rotate(3deg);
+		 padding: 3vw;
+		 margin: auto;
+
+		 }
+
+		 #standardtype {
+		 margin-top: 5vh;
+		 margin-right: auto;
+		 margin-left: auto;
+		 width: 90%;
+		 background: rgba(0, 0, 0, 0.2);
+		 padding: 2%;
+		 border-radius: 4vmin;
+		 font-size: 40px;
+		 text-align: center;
+		 }
+
+		 #icon {
+		 width: 10vw;
+		 background: rgba(0, 0, 0, 0.2);
+		 border-radius: 4vmin;
+		 padding: 2vw;
+		 }
+
+		 .table {
+		 display: table;
+		 margin: auto;
+		 width: 70vw;
+		 }
+
+		 ul#horizontal li{
+		 display: inline;
+		 padding: 1vw;
+		 }
+
+		 #pixel3dtoggle {
+		 display: inline;
+		 padding: 1vw;
+		 display: flex;
+		 justify-content: center;
+		 align-items: center;
+		 }
+
+		 #exhibit {
+		 margin: auto;
+		 padding: 1vw;
+		 border-radius: 4vmin;
+		 background: rgba(0, 0, 0, 0.2);
+		 width: 90vw;
+		 height: 72.9vh;
+		 margin-top: 4vh;
+		 margin-bottom: 4vh;
+		 }
+
+		 #img4by3 {
+		 max-width: 97.2vw;
+		 max-height: 72.9vh;
+		 width: auto;
+		 height: auto;
+		 border-radius: 4vmin;
+		 }
+		 
+		 #img16by9 {
+		 max-width: 129.6vw;
+		 max-height: 72.9vh;
+		 width: auto;
+		 height: auto;
+		 border-radius: 4vmin;
+		 }
+
+		 #img1by1 {
+		 max-width: 72.9vw;
+		 max-height: 72.9vh;
+		 width: auto;
+		 height: auto;
+		 border-radius: 4vmin;
+		 }
+
+		 #exhibittext {
+		 width: 90%;
+		 padding: 2%;
+		 font-size: 35px;
+		 margin-left: 5vw;
+		 margin-right: 5vw;
+		 text-align: center;
+		 }
+
+		 .left {float: left;}
+		 .right {float: right}
+
+		 #togglebutton {
+
+		 display: inline-block;
+		 border-style: solid;
+		 margin: 1%;
+		 width: 45%;
+		 background: rgba(0, 0, 0, 0.2);
+		 padding: 1%;
+		 border-radius: 4vmin;
+		 font-size: 50px;
+		 text-align: center;
+		 box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+		 transition: all 0.3s ease-in-out;
+		 }
+
+		 #togglebutton:hover {
+
+		 margin: 1%;
+		 width: 45%;
+		 background: rgba(0, 0, 0, 0.2);
+		 padding: 1%;
+		 border-radius: 4vmin;
+		 font-size: 50px;
+		 text-align: center;
+		 box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+		 transition: opacity 0.3s ease-in-out;
+		 transform: scale(1.05, 1.05);
+
+		 }
+
+		 @-webkit-keyframes scale-up-ver-center {
+		 0% {
+		   -webkit-transform: scaleY(0.4);
+		           transform: scaleY(0.4);
+		  }
+		 100% {
+	  		 -webkit-transform: scaleY(1);
+		             transform: scaleY(1);
+			}
+		 }
+
+			@-webkit-keyframes scale-up-ver-top {
+			0% {
+			    -webkit-transform: scaleY(0.4);
+			            transform: scaleY(0.4);
+			    -webkit-transform-origin: 100% 0%;
+			            transform-origin: 100% 0%;
+			}
+			100% {
+			    -webkit-transform: scaleY(1);
+			            transform: scaleY(1);
+		    -webkit-transform-origin: 100% 0%;
+				    transform-origin: 100% 0%;
+			  }
+			}
+
+		</style>
+	 <script type="text/javascript">
+		 top.visible_div_id = 'right';
+		 function toggle_visibility(id) {
+		   var old_e = document.getElementById(top.visible_div_id);
+		   var new_e = document.getElementById(id);
+		   if(old_e) {
+			  console.log('old', old_e, 'none');
+			  old_e.style.display = 'none';
+		   }
+    console.log('new', new_e, 'block');
+     new_e.style.display = 'block';   
+     top.visible_div_id = id;          
+  }
+  </script>
+		<link rel="icon" type="image/x-icon" href="favicon clicko.png">
+		<title>dirt's web portfolio</title>
+	</head>
+    <body onload="toggle_visibility('left');">
+	<div>
+	<img id="logo" src="logos/logo2.png" alt="hey look! it me!">
+	
+	<p id="webportfolio">middle school project website</p>
+	
+    {{ content }}
+    
+	<ul class="table" id="horizontal">
+		<li><a href="https://dirtbabby.newgrounds.com"><img id="icon" src="art/icons/ng.png" alt="my newgrounds page"></a></li>
+		<li><a href="discord.html"><img id="icon" src="art/icons/discord.png" alt="my discord"></a></li>
+		<li><a href="https://dirtsartdump.tumblr.com"><img id="icon" src="art/icons/art-tumblr.png" alt="my art tumblr"></a></li>
+		<li><a href="https://cupofdirtfordinner.tumblr.com"><img id="icon" src="art/icons/etc-tumblr.png" alt="my main tumblr"></a></li>
+		<li><a href="https://www.github.com/cupofdirtfordinner"><img id="icon" src="art/icons/github.png" alt="my github"></a></li>
+	</ul>
